@@ -6,10 +6,13 @@ select
 	case
 		when scientificName = 'Microcystis spp.' then 'urn:lsid:marinespecies.org:taxname:146557'
 		when scientificName = 'Microcystis sp.' then 'urn:lsid:marinespecies.org:taxname:146557'
+		when scientificName = 'Nitzschia spp.' then 'urn:lsid:marinespecies.org:taxname:149045'
 		when scientificName = 'Nitzschia sp.' then 'urn:lsid:marinespecies.org:taxname:149045'
 		when scientificName = 'Dolichospermum spp.' then 'urn:lsid:marinespecies.org:taxname:578476'
 		when scientificName = 'Dinophysis ovum Schütt sensu Martin 1929' then 'urn:lsid:marinespecies.org:taxname:109642'
 		when scientificName = 'Gonyaulax spinifera' then 'urn:lsid:marinespecies.org:taxname:110041'
+		when scientificName = 'Navicula sp.' then 'urn:lsid:marinespecies.org:taxname:149142'
+		when scientificName = 'Pyrodinium bahamense Plate 1906 var. compressum (Böhm) Steidinger et al. 1980' then 'urn:lsid:marinespecies.org:taxname:233399'
 		else null
 	end as scientificNameID,
 	organismQuantity,
