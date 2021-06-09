@@ -15,7 +15,10 @@ select
 	organismQuantity,
 	organismQuantityType,
 	'HumanObservation' as basisOfRecord,
-	'present' as occurrenceStatus
+	'present' as occurrenceStatus,
+	'IOC-UNESCO' as institutionCode,
+	'HAEDAT' as collectionCode,
+	'HAEDAT' as datasetName
 from
 (
 	select

@@ -2,6 +2,7 @@ select
 	concat('HAEDAT:', grid.gridCode, ':', eventName) as eventID,
 	region as higherGeography,
 	concat_ws(';', nullif(locationText, ''), nullif(additionalLocationInfo, '')) as locality,
+	'EPSG:4326' as geodeticDatum,
 	case
 		when event.longitude is not null and event.latitude is not null then event.longitude
 		else grid.longitude
